@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: lab5
+data:
+  app.env: "production"
+  log.level: "info"
+  backend.url: "http://backend-service:5000"
